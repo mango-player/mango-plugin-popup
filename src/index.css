@@ -1,4 +1,4 @@
-chimee-popup{
+mango-popup{
   position: absolute;
   color: #fff;
   background-color: rgba(88, 88, 88, 0.5);
@@ -7,7 +7,7 @@ chimee-popup{
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 3px;
 
-  cm-pp-close{
+  mg-popup-close{
     float: right;
     color: #fff;
     text-decoration: none;
@@ -23,18 +23,18 @@ chimee-popup{
     }
   }
 
-  cm-pp-head,
-  cm-pp-body{
+  mg-popup-head,
+  mg-popup-body{
     display: block;
     padding: 3px 3px 6px;
   }
-  cm-pp-head{
+  mg-popup-head{
     font-weight: bold;
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
     padding: 0 5px 4px;
     margin-bottom: 5px;
   }
-  cm-pp-body{
+  mg-popup-body{
     font-size: 12px;
   }
 }

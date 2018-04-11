@@ -53,9 +53,9 @@ function popupFactory ({
 } = {}) {
   const defaultConfig = {
     html: html || `
-      <cm-pp-close>×</cm-pp-close>
-      ${title !== false ? `<cm-pp-head>${title}</cm-pp-head>` : ''}
-      ${body !== false ? `<cm-pp-body>${body}</cm-pp-body>` : ''}
+      <mg-popup-close>×</mg-popup-close>
+      ${title !== false ? `<mg-popup-head>${title}</mg-popup-head>` : ''}
+      ${body !== false ? `<mg-popup-body>${body}</mg-popup-body>` : ''}
     `,
     closeSelector: '._close'
   };
@@ -76,7 +76,7 @@ function popupFactory ({
       const config = isObject(this.$config) ? deepAssign(defaultConfig, this.$config) : defaultConfig;
       const $dom = this.$domWrap = $(this.$dom).css('display', 'none');
 
-      $dom.html(config.html).delegate('cm-pp-close, ' + config.closeSelector, 'click', this.close);
+      $dom.html(config.html).delegate('mg-popup-close, ' + config.closeSelector, 'click', this.close);
 
       this.width(width).height(height).offset(offset).translate(translate);
 
@@ -159,7 +159,7 @@ function popupFactory ({
         if(x !== ''){
           this.$domWrap.css('transform', `translate(${x}, ${y || x})`);
           if(!('transform' in document.createElement('a').style) && window.console && window.console.warn){
-            console.warn('[chimee-plugin-popup] 当前环境不支持CSS3的transform特性，Dom元素无法正常使用translate。');
+            console.warn('[mango-plugin-popup] 当前环境不支持CSS3的transform特性，Dom元素无法正常使用translate。');
           }
         }
         return this;

@@ -27,7 +27,8 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "mango": "file:../mango",
-    "mango-helper": "file:../mango-helper"
+    "mango-helper": "file:../mango-helper",
+    "toxic-decorators": "^0.3.8"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
